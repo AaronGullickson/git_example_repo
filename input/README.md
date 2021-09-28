@@ -1,0 +1,3 @@
+# Example Data
+
+The data I am using for this example repository come from the 2016 panel of the [American National Election Studies](https://electionstudies.org/) (ANES). This directory contains the raw data for 2016 extracted from the ANES system as well as an R script entitled `organize_anes16.R` that converts this raw data into the analytical dataset that will be used for analysis. The analytical dataset can be created by sourcing this R script. The most current analytical dataset is available in the output directory as an RData object named `politics.RData`. 
