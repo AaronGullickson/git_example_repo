@@ -25,9 +25,9 @@ ggplot(subset(politics, president!="No Vote" & gender!="Other"),
        fill="Education",
        caption="Source: ANES 2016")+
   scale_y_continuous(label=scales::percent)+
-  scale_fill_brewer(palette="YlGn")+
+  scale_fill_brewer(palette="PuBuGn")+
   facet_wrap(~gender)+
-  theme_bw()
+  theme_classic()
 ```
 
 ```{r voting-income-boxplot}
