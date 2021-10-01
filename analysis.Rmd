@@ -41,7 +41,7 @@ ggplot(subset(politics, president!="No Vote" & gender!="Other"),
   scale_y_continuous(label=scales::percent)+
   scale_fill_brewer(palette="PuBuGn")+
   facet_wrap(~gender)+
-  theme_dark()
+  theme_mine()
 ```
 
 ```{r voting-income-boxplot}
@@ -51,7 +51,7 @@ ggplot(politics, aes(x=reorder(president, income, median), y=income*1000))+
   labs(x=NULL, y="annual household income",
        title="Comparative boxplots of annual household income by vote",
        caption="Source: ANES 2016")+
-  theme_dark()
+  theme_mine()
 ```
 
 ```{r voting-income-violin}
@@ -61,7 +61,7 @@ ggplot(politics, aes(x=reorder(president, income, median), y=income*1000))+
   labs(x=NULL, y="annual household income",
        title="Comparative violin plots of annual household income (in 1000s USD) by vote",
        caption="Source: ANES 2016")+
-  theme_dark()
+  theme_mine()
 ```
 
 ```{r models, results='asis'}
