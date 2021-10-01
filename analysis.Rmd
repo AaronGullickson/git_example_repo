@@ -19,7 +19,7 @@ This is just an R Markdown document with a bit of code in it that we will use fo
 ggplot(subset(politics, president!="No Vote" & gender!="Other"), 
        aes(x=president, y=..prop.., group=educ, fill=educ))+
   geom_bar(position = "dodge")+
-  labs(title="Presidential choice by education, 2016",
+  labs(title="Presidential choice by educational level, 2016",
        x=NULL,
        y="percent of education group",
        fill="Education",
