@@ -32,7 +32,7 @@ ggplot(subset(politics, president!="No Vote" & gender!="Other"),
 
 ```{r voting-income-boxplot}
 ggplot(politics, aes(x=reorder(president, income, median), y=income*1000))+
-  geom_boxplot(fill="skyblue", outlier.color="orange")+
+  geom_boxplot(fill="forestgreen", outlier.color="orange")+
   scale_y_continuous(label=scales::dollar)+
   labs(x=NULL, y="Annual household income",
        title="Comparative boxplots of annual household income by vote",
