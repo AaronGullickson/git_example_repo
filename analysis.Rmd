@@ -42,7 +42,7 @@ ggplot(politics, aes(x=reorder(president, income, median), y=income*1000))+
 
 ```{r voting-income-violin}
 ggplot(politics, aes(x=reorder(president, income, median), y=income*1000))+
-  geom_violin(fill="grey", outlier.color="red")+
+  geom_violin(fill="slateblue")+
   scale_y_continuous(label=scales::dollar)+
   labs(x=NULL, y="Annual household income",
        title="Comparative violin plots of annual household income by vote",
