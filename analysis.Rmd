@@ -11,6 +11,20 @@ source("check_packages.R")
 load(here("output","politics.RData"))
 ```
 
+```{r theme}
+theme_mine <- function() {
+  theme_bw()+
+    theme(panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          axis.title = element_text(size=8),
+          axis.text = element_text(size=7),
+          legend.text=element_text(size=7),
+          legend.title=element_text(size=8),
+          legend.key.size = unit(0.8,"line"),
+          strip.text = element_text(size=7))
+}
+```
+
 ## Introduction
 
 This is just an R Markdown document with a bit of code in it that we will use for test purposes. We will be analyzing the ANES data in the output directory.
